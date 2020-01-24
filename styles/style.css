@@ -1,0 +1,310 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu/Ubuntu-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu/Ubuntu-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu/Ubuntu-B.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lifehack';
+  src: url("../fonts/Lifehack Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gagalin';
+  src: url("../fonts/Gagalin/Gagalin-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 1.4;
+  background: #282828;
+  color: #fff;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Lifehack';
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: 'Gagalin';
+  font-size: 60px;
+  line-height: 1.2;
+  color: inherit;
+}
+
+.nav {
+  margin-right: 15px;
+}
+
+.btn {
+  padding: 12px 16px;
+  min-width: 100px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: transparent;
+}
+
+.btn--order {
+  color: #fff;
+  background: #e45028;
+}
+
+.btn--order:hover {
+  background: #c1401e;
+}
+
+.section {
+  min-height: 650px;
+  padding: 50px 0;
+}
+
+.section--welcome {
+  background: url("../assets/welcome_bg.jpg") no-repeat center/cover;
+}
+
+.section--best {
+  padding: 130px 0;
+  color: #2f3234;
+  background: url("../assets/best_bg.jpg") no-repeat center/cover;
+}
+
+.section--slider {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f9b43b), color-stop(40%, #eb8c38), color-stop(60%, #eb8c38), color-stop(60%, #eb8c38), to(#f9b43b));
+  background: linear-gradient(to bottom, #f9b43b 0, #eb8c38 40%, #eb8c38 60%, #eb8c38 60%, #f9b43b 100%);
+}
+
+.section__container {
+  margin: 0 auto;
+  padding: 0 80px;
+  max-width: 1100px;
+}
+
+.section__title {
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Gagalin';
+  font-size: 60px;
+  line-height: 1.2;
+  color: inherit;
+}
+
+.welcome__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.welcome__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.welcome__title {
+  text-transform: uppercase;
+  font-family: 'Gagalin';
+  font-size: 60px;
+  line-height: 1.2;
+  color: #f9b43b;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__nav {
+  margin-right: 15px;
+}
+
+.header__menu-list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header__menu-item {
+  position: relative;
+  text-transform: uppercase;
+  margin-left: 36px;
+}
+
+.header__menu-item:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -18px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.header__menu-item:first-child {
+  margin-left: 0;
+}
+
+.header__menu-item:first-child:before {
+  display: none;
+}
+
+.header__menu-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header__menu-item a:hover {
+  text-decoration: underline;
+}
+
+.benefits__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 60px;
+}
+
+.benefits__item {
+  text-align: center;
+  margin: 0 10px;
+}
+
+.benefits__item img {
+  width: 95px;
+  height: 90px;
+}
+
+.benefits__item p {
+  font-weight: 300;
+}
+
+.benefits__title {
+  font-family: 'Lifehack';
+  font-size: 24px;
+}
+
+.burger-slider__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.burger-slider__info {
+  margin-left: 15px;
+}
+
+.burger-slider__title {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Gagalin';
+  font-size: 60px;
+  line-height: 1;
+  color: inherit;
+}
+
+.burger-slider__desc {
+  margin-top: 30px;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.burger-slider__price {
+  margin-right: 30px;
+  text-transform: uppercase;
+  font-family: 'Gagalin';
+  font-size: 26px;
+  line-height: 1;
+  color: #e35028;
+}
+
+.burger-slider__price-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.burger-slider__price-count {
+  font-size: 60px;
+}
+/*# sourceMappingURL=style.css.map */

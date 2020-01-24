@@ -1,0 +1,23 @@
+.benefits {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 60px;
+  }
+  &__item {
+    text-align: center;
+    margin: 0 10px;
+    img {
+      width: 95px;
+      height: 90px;
+    }
+    p {
+      font-weight: 300;
+    }
+  }
+  &__title {
+    font-family: 'Lifehack';
+    font-size: 24px;
+  }
+}

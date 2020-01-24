@@ -1,0 +1,29 @@
+.section {
+  min-height: 650px;
+  padding: 50px 0;
+  &--welcome {
+    background: url('../assets/welcome_bg.jpg') no-repeat center / cover;
+  }
+  &--best {
+    padding: 130px 0;
+    color: #2f3234;
+    background: url('../assets/best_bg.jpg') no-repeat center / cover;
+  }
+  &--slider {
+    background: linear-gradient(to bottom,#f9b43b 0,#eb8c38 40%,#eb8c38 60%,#eb8c38 60%,#f9b43b 100%);
+  }
+  &__container {
+    margin: 0 auto;
+    padding: 0 80px;
+    max-width: 1100px;
+  }
+  &__title {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Gagalin';
+    font-size: 60px;
+    line-height: 1.2;
+    color: inherit;
+  }
+}
